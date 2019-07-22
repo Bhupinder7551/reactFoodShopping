@@ -1,8 +1,4 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
+﻿
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -14,5 +10,88 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+.avtarstyle {
+    background-color: black;
+    border-radius: 5%;
+}
+
+    .avtarstyle img {
+        height: 200px;
+        width: 300px;
+    }
+
+    .avtarstyle h1 {
+        color: white;
+    }
+
+    .avtarstyle p {
+        color: white;
+    }
+
+body {
+    font-family: 'josefin sans';
+    font-size: 16px;
+}
+/* https://images.unsplash.com/photo-1439902315629-cd882022cea0?fit=crop&fm=jpg&h=975&q=80&w=1925 */
+.hero {
+    height: 50vh;
+    width: 100%;
+    transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+    .hero.scrolled {
+        transform: translate3d(0, -100%, 0) scale(.75);
+        opacity: 0;
+    }
+
+.hero-inner {
+    background-image: url('https://images.unsplash.com/photo-1442188950719-e8a67aea613a?fit=crop&fm=jpg&h=975&q=80&w=1925');
+    background-size: cover;
+    background-position: center;
+    display: table;
+    width: 100%;
+    height: 80%;
+}
+
+.hero-title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: montserrat;
+}
+
+.font-2 {
+    font-family: 'josefin sans';
+    font-weight: 700;
+}
+
+.title {
+    letter-spacing: .3em;
+    text-transform: uppercase;
+}
+
+.text-light {
+    color: #fff
+}
+
+.font-alt {
+    font-family: 'georgia';
+    font-style: italic;
+    color: #666;
+}
+
+.footer {
+    position: relative;
+    height: 300px;
+    color: white;
+    text-align: center;
+    background-color: skyblue;
+    background-size: cover;
 }
 
